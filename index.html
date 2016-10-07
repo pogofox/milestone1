@@ -1,7 +1,150 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
 <head>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <title>Kool-Aid | Home Page</title>
+
+  <style>
+    nav.navlinks{
+      float:left;
+    }
+    div.bodycontent{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    div.imagearea{
+      width: 550px;
+      float: left;
+    }
+    div.imagearea, div.textarea{
+      float: left;
+    }
+    div.textarea h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        color: white;
+        line-height: 50px;
+        margin-bottom: 35px;
+    }
+    div.textarea p.thedrink{
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #B1AEDE;
+      margin-top: -20px;
+      margin-bottom: 120px;
+    }
+    div.textarea p.sendkoolaid a{
+      color: white;
+      float: left;
+      text-align: center;
+      height: 80px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 45px;
+      padding-left: 45px;
+      margin-top: -60px;
+      line-height: 75%;
+      background-color: #FF8ED8;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      border-radius: 40px;
+      box-shadow: 0 0 30px rgba(255, 142, 216, 0.75);
+    }
+    div.textarea{
+      float: left;
+      width: 550px;
+    }
+    nav.navlinks a{
+      float: left;
+      padding-left: 35px;
+      font-family: sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      color:#B1AEDE;
+      margin-left: 30px;
+      margin-right: 35px;
+      margin-top: 10px;
+    }
+    nav.navlinks a:hover{
+      color:white;
+    }
+    div.footerlinks{
+      color:#B1AEDE;
+      width: 1100px;
+      height: 34px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    nav.sociallinks{
+      float:right;
+      display: inline-flex;
+      height: 34px;
+      width: 34px;
+      margin-left: 10px;
+      margin-right: -100px;
+    }
+    nav.sociallinks img{
+      display: inline-flex;
+      float:right;
+      height: 34px;
+      width: 34px;
+      margin-left: 10px;
+    }
+    nav.sociallinks img:hover{
+     opacity: .25;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <nav class='shaedycultlogo'>
+      <a href='index.html'>
+        <img src='images/logo.svg' alt='Shaedycult Logo' height='37'>
+      </a>
+    </nav>
+    <div class='headerlinks'>
+      <a href="contact.html">CONTACT</a>
+      <a href="about.html">ABOUT US</a>
+    </div>
+  </header>
+
+  <div class="bodycontent">
+    <div class="imagearea">
+      <img src="Images/sodacans.png" alt="Pink soda labelled Kool-aid" width="550px" float left>
+    </div>
+
+    <div class="textarea">
+      <h1>We've distilled God's essence into one simple 12oz can.</h1>
+      <p class='thedrink'>This drink is so amazing we're giving them away for free! The afterlife is only a click away!</p>
+      <p class='sendkoolaid'><a href="contact.html">SEND ME MY KOOL-AID</a></p>
+    </div>
+  </div>
+
+<footer>
+  <div class='footerlinks'>
+    <nav class='navlinks'>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <nav class='sociallinks'>
+      <img src="Images/instagram.svg" alt="Instagram icon">
+      <img src="Images/facebook.svg" alt="Facebook icon">
+      <img src="Images/twitter.svg" alt="Twitter icon">
+    </nav>
+  </div>
+  <div class='copyright'>
+    <p>&copy ShaedyCult 2016</p>
+  </div>
+</footer>
+
 </body>
+
 </html>
