@@ -1,9 +1,93 @@
 <!DOCTYPE html>
+
 <html lang='en'>
 <head>
   <link rel='stylesheet' type='text/css' href='bootstrap.css'>
   <title>Kool-Aid | About Us</title>
+  <style>
+    div.aboutus, div.jebsection, div.jezsection{
+      background-color: white;
+      box-shadow: 0 0 100px rgba(255, 255, 255, .75);
+      margin-bottom: 90px;
+      margin-left: 50%;
+      margin-right: 50%;
+      margin-top: 10px;
+      padding-bottom: 80px;
+      padding-left: 130px;
+      padding-right: 100px;
+      padding-top: 80px;
+      width: 750px;
+    }
+    div.aboutus{
+      margin-top: 0px;
+    }
+    div.aboutus h1{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      color: #FF8ED8;
+      margin-bottom: 35px;
+    }
+    div.aboutus h3, div.aboutjeb h3, div.aboutjez h3{
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #5C5C5C;
+      max-width: 480px;
+    }
+    div.jebsection{
+      padding: 80px, 80px, 80px, 180px;
+      position: relative;
+    }
+    div.jebpic img, div.jezpic img{
+      width: 208px;
+      position: absolute;
+      top: -40px;
+      border: 20px solid white;
+      border-radius: 50%;
+    }
+    div.jebpic img{
+      left: -70px;
+    }
+    div.aboutjeb h1, div.aboutjeb h2, div.aboutjez h1, div.aboutjez h2{
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    div.aboutjeb h1, div.aboutjeb h2{
+      display: inline-flex;
+    }
+    div.aboutjez{
+      text-align: right;
+    }
+    div.aboutjeb h1, div.aboutjez h1{
+      color: #5C5C5C;
+    }
+    div.aboutjeb h2, div.aboutjez h2{
+      color: #FF8ED8;
+    }
+    div.jezsection{
+      padding: 80px, 180px, 80px, 80px;
+      position: relative;
+    }
+    div.aboutjez h1, div.aboutjez h2{
+      display: inline-flex;
+      margin-left: -50px;
+      padding-right: 50px;
+    }
+    div.jezpic img{
+      right: -70px;
+    }
+    div.aboutjez h3{
+      text-align: right;
+    }
+    div.aboutsection{
+      margin-right: 50%;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav class='shaedycultlogo'>
@@ -17,18 +101,60 @@
     </div>
   </header>
 
+  <div class='aboutsection'>
+    <div class='aboutus'>
+      <h1>A BIT ABOUT US</h1>
+
+      <h3>We are a super trustworthy, and not creepy in any way,
+        company filled with love for green paper. Established in
+        2015, we gained support quickly and our wonderful Kool-
+        Aid started changing lives. We want to thank all of our
+        supporters, even though they aren't with us anymore.
+      </h3>
+    </div>
+
+    <div class='jebsection'>
+      <div class='jebpic'>
+        <img src='images/jeb.jpg' alt='Jebediah, an Amish-looking man.'>
+      </div>
+      <div class='aboutjeb'>
+        <h1>Jebediah Jameson, </h1>
+        <h2>Co-Founder</h2>
+        <h3>I have a direct line to God and have his explicit blessing
+          to create this wonderful drink and bring his sheeple back
+          to him in the afterlife.
+        </h3>
+      </div>
+    </div>
+
+    <div class='jezsection'>
+      <div class='jezpic'>
+        <img src='images/jez.jpg' alt='Jezebelle, a woman pastor.'>
+      </div>
+      <div class='aboutjez'>
+        <h1>Jezebelle Jameson, </h1>
+        <h2>Co-Founder</h2>
+        <h3>I am the moral support for the amazing leader that is my
+          husband. His communion with Got is a miracle and
+          everyone should be able to take advantage of his divine
+          greatness. Kool-Aid for the win!
+        </h3>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <div class='footerlinks'>
       <nav class='navlinks'>
         <a href='index.html'>HOME</a>
-        <a href='about.html' color='white'>ABOUT US</a>
+        <a href='about.html'>ABOUT US</a>
         <a href='contact.html'>CONTACT</a>
       </nav>
 
       <nav class='sociallinks'>
-        <img src='Images/instagram.svg' alt='Instagram icon'>
-        <img src='Images/facebook.svg' alt='Facebook icon'>
-        <img src='Images/twitter.svg' alt='Twitter icon'>
+        <img src='images/instagram.svg' alt='Instagram icon'>
+        <img src='images/facebook.svg' alt='Facebook icon'>
+        <img src='images/twitter.svg' alt='Twitter icon'>
       </nav>
     </div>
     <div class='copyright'>
