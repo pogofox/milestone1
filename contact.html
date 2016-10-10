@@ -1,7 +1,182 @@
-<html>
-<head>
-  <title>Kool-Aid | Contact Us</title>
-</head>
-<body>
-</body>
+<!DOCTYPE html>
+
+ <html lang='en'>
+  <head>
+    <title>Kool-Aid | Contact Us</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+    <style>
+      div.littlelonger{
+        background-color: white;
+        box-shadow: 0 0 100px rgba(255, 255, 255, .75);
+        margin-bottom: 90px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 10px;
+        padding-bottom: 80px;
+        padding-left: 130px;
+        padding-right: 100px;
+        padding-top: 80px;
+        width: 750px;
+      }
+      div.littlelonger h1{
+        color: #FF8ED8;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 35px;
+      }
+      div.littlelonger p.formmessage{
+        color: #5C5C5C;
+        font-family: 'Roboto Slab', serif;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 480px;
+      }
+      div.contactbody{
+        margin-right: 64%;
+        padding-right: 7px;
+        padding-top: 107px;
+      }
+      div.formcontent{
+        margin-left: 80%;
+        margin-right: 0%;
+        width: 500px
+      }
+      div.formcontent input{
+        background: none;
+        border-bottom: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 18px;
+        font-weight: 700;
+        height: 35px;
+        outline: none;
+        padding-left: 0;
+      }
+      div.formcontent input::-webkit-input-placeHolder{
+        color: #B1AEDE;
+      }
+      nav.emailinfo input{
+        margin-top: 40px;
+        width: 100%;
+      }
+      div.firstname{
+        float: left;
+        width: 45%;
+      }
+      div.lastname{
+        float: right;
+        width: 45%;
+      }
+      div.formcontent h1{
+        background: #FF8ED8;
+        border-radius: 30px;
+        box-shadow: 0 0 30px rgba(255, 142, 216, .75);
+        color: white;
+        height: 60px;
+        margin-top: 40px;
+        padding: 20px 45px;
+        text-align: center;
+      }
+      div.formcontent h1 input{
+        border-bottom: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        margin-left: -110px;
+        margin-top: -7px;
+        position: absolute;
+      }
+      div.formcontent h1:hover{
+        box-shadow: 0 0 30px rgba(64, 61, 101, .75);
+        color: #403D65;
+      }
+      div#checkresults {
+        margin-bottom: 40px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-top: 10px;
+        padding-bottom: 40px;
+        padding-left: 130px;
+        padding-right: 100px;
+        padding-top: 40px;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #B1AEDE;
+        margin-top: -20px;
+        margin-bottom: 120px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class='shaedycultlogo'>
+        <a href='index.html'>
+          <img src='images/logo.svg' alt='Shaedycult Logo' height='37'>
+        </a>
+      </nav>
+      <div class='headerlinks'>
+        <a href='contact.html'>CONTACT</a>
+        <a href='about.html'>ABOUT US</a>
+      </div>
+    </header>
+
+    <div class='contactbody'>
+      <div class='littlelonger'>
+        <h1>HOLD OUT A LITTLE LONGER</h1>
+        <p class='formmessage'>
+          Fill out the form below and we will send you an email
+          with a simple liability form for you to sign. After that, we
+          ship you your free can of Kool-Aid, satisfaction
+          guranteed. We've never heard a bad word from our
+          wonderful customers, because they've already moved on to
+          the afterlife!
+        </p>
+      </div>
+      <div class='formcontent'>
+        <form>
+          <div class='firstname'>
+            <br><input type='text' id='firstnamebox' placeholder='First Name'><br>
+          </div>
+          <div class='lastname'>
+            <br><input type='text' id='lastnamebox' placeholder='Last Name'><br>
+          </div>
+          <nav class='emailinfo'>
+            <br><input type='text' id='email' placeholder='Email Address'><br>
+            <br><input type='text' id='confirmemail' placeholder='Confirm Email Address'><br>
+          </nav>
+          <h1><input type='button' id='submitemail' value='BRING ON THE AFTERLIFE' onclick='checkinfo()'></h1>
+        </form>
+      </div>
+      <div id='checkresults'>
+      </div>
+    </div>
+
+    <footer>
+      <div class='footerlinks'>
+        <nav class='navlinks'>
+          <a href='index.html'>HOME</a>
+          <a href='about.html'>ABOUT US</a>
+          <a href='contact.html'>CONTACT</a>
+        </nav>
+
+        <nav class='sociallinks'>
+          <img src='Images/instagram.svg' alt='Instagram icon'>
+          <img src='Images/facebook.svg' alt='Facebook icon'>
+          <img src='Images/twitter.svg' alt='Twitter icon'>
+        </nav>
+      </div>
+      <div class='copyright'>
+        <p>&copy ShaedyCult 2016</p>
+      </div>
+    </footer>
+
+    <script src = './javascript/checkform.js'></script>
+  </body>
 </html>
